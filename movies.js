@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', async function(event) {
   let db = firebase.firestore()
-  let apiKey = e3412ea997f90ec10abcc17d512d013e
+  let apiKey = 'e3412ea997f90ec10abcc17d512d013e'
   let response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US`)
   let json = await response.json()
   let movies = json.results
