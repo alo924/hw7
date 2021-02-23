@@ -8,7 +8,7 @@ firebase.auth().onAuthStateChanged(async function (user) {
   console.log(movies)
 
   if (user) {
-    console.log('signed in')
+    console.log(`signed in as ${user.id}`)
 
     document.querySelector('.sign-in-or-sign-out').innerHTML = `
     <button class="text-pink-500 underline sign-out">Sign Out</button>
